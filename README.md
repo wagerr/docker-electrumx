@@ -13,6 +13,22 @@
 An easily configurable Docker image for running an Electrum server.
 
 ## Usage
+Build docker image:
+
+```
+sudo docker build -t electrumx-img docker-electrumx
+
+```
+
+Run Docker image:
+
+```
+
+docker run -v /home/root/WagerrElectrumX:/data --net="host" -e COIN=Wagerr  electrumx-img
+
+```
+
+Example: specify ENV variable in docker command line
 
 ```
 docker run \
