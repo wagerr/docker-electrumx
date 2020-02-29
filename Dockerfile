@@ -9,7 +9,7 @@ RUN chmod a+x /usr/local/bin/* && \
     apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/main leveldb-dev && \
     apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing rocksdb-dev && \
     pip install aiohttp pylru plyvel websockets python-rocksdb quark_hash && \
-    git clone  https://github.com/wagerrdeveloper/WagerrElectrumX.git && \
+    git clone  https://github.com/wagerr/wagerr-electrumx-server.git && \
     cd WagerrElectrumX && \
     python setup.py install && \
     apk del git build-base && \
