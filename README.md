@@ -24,7 +24,7 @@ Run Docker image:
 
 ```
 
-docker run -d -v /home/root/WagerrElectrumX:/data --net="host" -e COIN=Wagerr  electrumx-img
+docker run -d -v /home/root/WagerrElectrumX:/data --net="host" -e COIN=Wagerr -e COST_SOFT_LIMIT=0 -e COST_HARD_LIMIT=0  electrumx-img
 
 ```
 
