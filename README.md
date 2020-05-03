@@ -28,6 +28,15 @@ docker run -d -v /home/root/WagerrElectrumX:/data --net="host" -e COIN=Wagerr -e
 
 ```
 
+Setup cron for compact the history database and restart electrumx:
+
+```
+crontab -e 
+
+0 0 */3 * * docker container restart container-id
+
+```
+
 Example: specify ENV variable in docker command line
 
 ```
